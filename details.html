@@ -1,127 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li> -->
-                    <!-- <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li> -->
-                </ul>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <!-- <i class="fa-brands fa-cc-visa"></i> -->
+
+                    <a class="navbar-brand" href="#"><i class="fab fa-cc-visa"></i></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex mx-auto" role="search">
+                            <!-- Centered search box -->
+                            <input class="form-control me-2 custom-search-width" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                        <ul class="navbar-nav ml-2">
+                            <!-- Right-aligned menu items -->
+                            <!-- Profile Icon -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fas fa-user"></i> <!-- Font Awesome user icon -->
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="row flex-nowrap">
+                <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-body-tertiary">
+                    <div
+                        class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-dark min-vh-100">
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                            id="menu">
+                            <li class="nav-item">
+                                <a href="./index.html" class="nav-link align-middle px-0">
+                                    <i class="fs-4 bi-house"></i> <span style="color: black;"
+                                        class="ms-1 d-none d-sm-inline">Home</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <div class="dropdown pb-4">
+                            <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle"
+                                id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30"
+                                    class="rounded-circle">
+                                <span class="d-none d-sm-inline mx-1">loser</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                                <li><a class="dropdown-item" href="#">New project...</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Sign out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col py-3">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr class="table-success">
+                                <th scope="col">#</th>
+                                <th scope="col">Service Name</th>
+                                <th scope="col">Active</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td> <img src="./icons/48/Arch_AWS-Identity-and-Access-Management_48.png" style="width: 25px; margin-right: 1em;" alt="...">AWS Identity and Access Management (IAM)</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td> <img src="./icons/48/Arch_AWS-Key-Management-Service_48.png" style="width: 25px; margin-right: 1em;"
+                                        alt="...">AWS Key Management Service (KMS)</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td> <img src="./icons/48/Arch_AWS-Certificate-Manager_48.png" style="width: 25px; margin-right: 1em;"
+                                        alt="...">AWS Certificate Manager (ACM)</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td> <img src="./icons/48/Arch_AWS-WAF_48.png" style="width: 25px; margin-right: 1em;"
+                                        alt="...">AWS WAF (Web Application Firewall)</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td> <img src="./icons/48/Arch_Amazon-GuardDuty_48.png" style="width: 25px; margin-right: 1em;" alt="...">Amazon GuardDuty</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td> <img src="./icons/48/Arch_AWS-Secrets-Manager_48.png" style="width: 25px; margin-right: 1em;" alt="...">AWS Secrets Manager</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td> <img src="./icons/48/Arch_AWS-Shield_48.png" style="width: 25px; margin-right: 1em;" alt="...">AWS
+                                    Shield</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td> <img src="./icons/48/Arch_AWS-Signer_48.png" style="width: 25px; margin-right: 1em;" alt="...">AWS
+                                    Signer</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td> <img src="./icons/48/Arch_AWS-Private-Certificate-Authority_48.png" style="width: 25px; margin-right: 1em;" alt="...">AWS
+                                    Private Certificate Authority</td>
+                                <td>Yes</td>
+                            </tr><tr>
+                                <th scope="row">10</th>
+                                <td> <img src="./icons/48/Arch_AWS-Resource-Access-Manager_48.png" style="width: 25px; margin-right: 1em;"
+                                        alt="...">AWS
+                                    Resource Access Manager</td>
+                                <td>Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
-    </nav>
-    <h2>Details Page</h2>
-    <!-- Tabel for details page here -->
-<table class="table">
-    <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">Service Name</th>
-            <th scope="col">Is Active</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>AWS Identity and Access Management (IAM)</td>
-            <td>Yes</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>AWS Key Management Service (KMS)</td>
-            <td>Yes</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Amazon Cognito</td>
-            <td>Yes</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>AWS Secrets Manager</td>
-            <td>Yes</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Amazon Detective</td>
-            <td>Yes</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>AWS Certificate Manager (ACM)</td>
-            <td>Yes</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>AWS Firewall Manager</td>
-            <td>Yes</td>
-        </tr>
-
-        <tr>
-            <th scope="row">3</th>
-            <td>AWS Security Hub</td>
-            <td>Yes</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Amazon VPC (Virtual Private Cloud):</td>
-            <td>Yes</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Amazon GuardDuty</td>
-            <td>Yes</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Amazon Detective</td>
-            <td>Yes</td>
-        </tr>
-
-
-        <tr>
-            <th scope="row">3</th>
-            <td>AWS Organizations</td>
-            <td>Yes</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>AWS Shield</td>
-            <td>Yes</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>AWS Artifact</td>
-            <td>Yes</td>
-        </tr>
-    </tbody>
-</table>
-
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
@@ -129,4 +164,5 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

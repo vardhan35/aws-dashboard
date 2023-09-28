@@ -1,0 +1,10 @@
+.custom-search-width {
+    width: 800px;
+    /* Set your desired width */
+}
+
+.custom-search-width-2 {
+    width: 1000px;
+    /* Set your desired width */
+    margin: auto;
+}
